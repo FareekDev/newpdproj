@@ -204,7 +204,6 @@ struct CreateProject : ParsableCommand {
                 attributes = [.font : font]
                 nameSize = name.size(withAttributes: attributes)
 
-                print("font: \(font), nameSize: \(nameSize)")
                 fontSize -= 1
             } while nameSize.width > rect.width - 20 && fontSize > 9
 
