@@ -1,9 +1,9 @@
 # newpdproj
 Create a new Playdate project for LUA or C
 
-This a simple command-line utility written in Swift to create empty Playdate projects for C or Lua projects. To use the resulting project, you must have installed the Playdate SDK available [here.](https://play.date/dev/)
+This a simple command-line utility written in Swift to create empty Playdate projects in C or Lua. To use the resulting project, you must have installed the Playdate SDK available [here.](https://play.date/dev/)
 
-The utility creates a bare-bones project with both a launch screen and card image containing the name of your application.
+The utility creates a bare-bones project with both a launch screen and card image containing the name of your application as well as boilerplate code and makefiles.
 
 The command line options are:
 ```
