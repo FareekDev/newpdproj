@@ -20,7 +20,7 @@ import RegexBuilder
  #DESCRIPTION#
  */
 
-extension String : Error {}
+extension String : @retroactive Error {}
 
 @main
 struct CreateProject : ParsableCommand {
@@ -183,6 +183,8 @@ struct CreateProject : ParsableCommand {
         let name = substitutions["APPNAME"]! as NSString
 
         let image = NSImage(size: size, flipped: true) { rect in
+            NSColor.white.set()
+            rect.fill()
             NSColor.black.setStroke()
             rect.frame(withWidth: 3.0)
 
